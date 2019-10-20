@@ -62,7 +62,8 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "files": [
-    "touchBistroTestAPI/app.ts"
+    "touchBistroTestAPI/app.ts",
+    "touchBistroTestAPITest/test.spec.ts",
   ],
   "exclude": [
     "node_modules",

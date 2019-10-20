@@ -17,7 +17,7 @@ class CheckPrime {
 }
 
 // method to find All Prime Numbers to the maximum number
-const findAllPrime = async (max: number): Promise<number[]> => {
+export const findAllPrime = async (max: number): Promise<number[]> => {
     return new Promise((res, rej) => {
         try {
             let retVal: Array<number>;
@@ -45,7 +45,7 @@ const findAllPrime = async (max: number): Promise<number[]> => {
     });
 }
 
-const findMedianOfPrime = async (primeNum: Array<number>): Promise<number[]> => {
+export const findMedianOfPrime = async (primeNum: Array<number>): Promise<number[]> => {
     return new Promise((res, rej) => {
         try {
             let retVal: Array<number> = new Array<number>();
