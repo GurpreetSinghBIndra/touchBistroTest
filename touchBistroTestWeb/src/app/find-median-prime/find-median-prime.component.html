@@ -1,0 +1,23 @@
+<div style="text-align:center">
+    <h2>Meridian for Prime Number!</h2>
+    <br>
+    <br>
+    <form [formGroup]="componentForm" (ngSubmit)="findMedianPrime()">
+        <mat-form-field style="width: 80% !important;">
+            <input matInput formControlName='maxNumbPrime' appNumbersOnly placeholder="Maximum Number for which prime median is to be identified">
+        </mat-form-field>
+        <br>
+        <button type="submit" [disabled]="(componentForm.invalid)" class="btn btn-primary"> Find! </button>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-4"><h5>Median of Prime Numbers:</h5></div>
+            <div class="col-1" *ngFor="let median of componentForm.get('medianPrime').value">
+                <mat-form-field style="width:20% !important">
+                    <input matInput [value]="median">
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+
+</div>

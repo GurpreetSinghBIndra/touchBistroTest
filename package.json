@@ -1,0 +1,28 @@
+{
+  "name": "touchbistrotest",
+  "version": "1.0.0",
+  "description": "This is a code test project, created for TouchBistro by Gurpreet Singh Bindra",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "cd ./touchBistroTestAPI && tsc && node ../build/app.js && cd ../touchBistroTestWeb && ng serve --port 2707",
+    "start": "tsc && node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GurpreetSinghBIndra/touchBistroTest.git"
+  },
+  "author": "Gurpreet Singh Bindra",
+  "license": "(c) Gurpreet Singh Bindra",
+  "bugs": {
+    "url": "https://github.com/GurpreetSinghBIndra/touchBistroTest/issues"
+  },
+  "homepage": "https://github.com/GurpreetSinghBIndra/touchBistroTest#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "typescript": "^3.6.4"
+  }
+}
